@@ -1,0 +1,9 @@
+{
+  "Placeholder Variables": {
+    "prefix": "%",
+    "body": [
+      "${1|%APP_LOGIN_URL%,%COMPANY%,%COMPANY_POSSESSIVE%,%COMPANY_CORE_PRODUCT%,%EMBEDDED_WORKFLOW_BUILDER%,%WHITE_LABEL_BASE_URL%,%NAVIGATING_TO_BUILDER%,%WORKFLOW%,%WORKFLOW_PLURAL%|}"
+    ],
+    "description": "Insert placeholder variable"
+  }
+}

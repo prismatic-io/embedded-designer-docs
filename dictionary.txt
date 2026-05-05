@@ -1,0 +1,8 @@
+# Words we use in embedded designer docs that are not in the dictionary. Please 'sort u' this list in vim before committing.
+asana
+hmac
+hubspot
+mendhak
+picklist
+picklists
+upsert

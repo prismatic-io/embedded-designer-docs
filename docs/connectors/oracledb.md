@@ -1,0 +1,56 @@
+---
+title: Oracle Database Connector
+sidebar_label: Oracle Database
+description: Query and manage data in an OracleDB database
+---
+
+![Oracle Database](./assets/oracledb.png#connector-icon)
+[Oracle Database](https://www.oracle.com/database/) is a popular relational database system.
+This component allows querying an Oracle database.
+
+## API Documentation
+
+This component was built using [Node.js for Oracle Database](https://node-oracledb.readthedocs.io/en/latest/user_guide/introduction.html#getting-started).
+
+## Connections
+
+### OracleDB Connection {#oracledbconnection}
+
+Authenticate requests to an OracleDB server.
+
+OracleDB requires a direct database connection with host, port, and database credentials.
+
+#### Prerequisites
+
+- An Oracle Database instance accessible from the network
+- Database user credentials with appropriate permissions
+
+#### Configure the Connection
+
+- **Host**: Enter the hostname or IP address of the Oracle DB server (e.g., `192.168.0.1`)
+- **Port**: Enter the port number (default: `1521`)
+- **Database**: Enter the Oracle database SID (e.g., `xe`)
+- **Username**: Enter the database username (optional if using OS authentication)
+- **Password**: Enter the database password (optional if using OS authentication)
+
+| Input              | Comments                                                                                                             | Default |
+| ------------------ | -------------------------------------------------------------------------------------------------------------------- | ------- |
+| Host               | Provide the string value for the host of the server.                                                                 |         |
+| Port               | The port of the Oracle DB server.                                                                                    | 1521    |
+| Database           | The database SID in Oracle DB                                                                                        |         |
+| Username           |                                                                                                                      |         |
+| Password           |                                                                                                                      |         |
+| Connection Timeout | The amount of time (in seconds) to wait for a connection to be established before timing out. Default is 10 seconds. | 10      |
+
+## Actions
+
+### Query {#query}
+
+Returns the results of an OracleDB database query
+
+| Input                   | Comments                                                                                                                                                                                                                                                                                                               | Default                                                             |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
+| Connection              |                                                                                                                                                                                                                                                                                                                        |                                                                     |
+| SQL Query               |                                                                                                                                                                                                                                                                                                                        | SELECT \* FROM mytable WHERE name = :name AND company = :company_id |
+| Named Parameters        | Optional named parameters to insert into a query. Ensure the keys of these parameters match parameters in your query. For example, if your query contains ':company_name', give this parameter the key 'company_name'. Values specified here are merged with values supplied from the 'Named Parameters Object' input. |                                                                     |
+| Named Parameters Object | Optional named parameters to insert into a query. Ensure the keys of these parameters match parameters in your query. For example, if your query contains ':company_name', your object should contain a key 'company_name'. Values in this object are merged with values supplied from the 'Named Parameters' input.   |                                                                     |

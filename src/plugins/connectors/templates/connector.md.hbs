@@ -1,0 +1,69 @@
+---
+title: {{{label}}} Connector
+sidebar_label: {{{label}}}
+description: {{{description}}}
+---
+
+![{{{label}}}](./assets/{{{lowerCase key}}}.png#connector-icon)
+{{#if docsDescription}}{{{docsDescription}}}{{else}}{{{description}}}{{/if}}
+
+{{#if connections.nodes}}
+
+## Connections
+
+{{#each connections.nodes}}
+
+### {{{label}}} {{{anchor key}}}
+
+{{{comments}}}
+
+{{#if connectionDocs}}
+
+{{{connectionDocs}}}
+
+{{/if}}
+
+{{#if oauth2Type}}
+
+This connection uses OAuth 2.0, a common authentication mechanism for integrations.
+Read about how OAuth 2.0 works [here](../oauth2.md).
+
+{{/if}} {{!-- oauth2Type --}}
+
+{{>inputsTable inputs=inputs.nodes}}
+
+{{/each}} {{!-- connections.nodes --}}
+
+{{/if}} {{!-- connections.nodes --}}
+
+{{#if triggers.nodes}}
+
+## Triggers
+
+{{#each triggers.nodes}}
+
+### {{{label}}} {{{anchor key}}}
+
+{{{description}}}
+
+{{>inputsTable inputs=inputs.nodes}}
+
+{{/each}} {{!-- triggers.nodes --}}
+
+{{/if}} {{!-- triggers.nodes --}}
+
+{{#if actions.nodes}}
+
+## Actions
+
+{{#each actions.nodes}}
+
+### {{{label}}} {{{anchor key}}}
+
+{{{description}}}
+
+{{>inputsTable inputs=inputs.nodes}}
+
+{{/each}} {{!-- actions.nodes --}}
+
+{{/if}} {{!-- actions.nodes --}}

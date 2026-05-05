@@ -1,0 +1,24 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "files": ["docs/**/*.md", "docs/**/*.mdx"],
+  "ignorePaths": ["docs/connectors/"], // Ignore connector docs, which contain lots of made-up words.
+  "useGitignore": false,
+  "languageSettings": [
+    {
+      "languageId": "*",
+      "ignoreRegExpList": [
+        "/^\\s*```[\\s\\S]*?^\\s*```/gm", // Ignore multi-line code examples
+        "/`.*?`/g" // Ignore inline code examples
+      ]
+    }
+  ],
+  "dictionaries": ["project-words"],
+  "dictionaryDefinitions": [
+    {
+      "name": "project-words",
+      "path": "./dictionary.txt",
+      "noSuggest": true
+    }
+  ]
+}
