@@ -41,6 +41,8 @@ To generate an admin API access token:
 9. Under **Admin API access token**, click **Install app** to generate the token.
 10. Copy the **Admin API access token** value.
 
+The token will have a format similar to `shpat_00000000000000000000000000000000`.
+
 Refer to [Shopify's Admin API access token documentation](https://shopify.dev/docs/apps/auth/admin-app-access-tokens) for more information.
 
 #### Configure the Connection
