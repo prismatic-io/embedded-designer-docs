@@ -42,9 +42,3 @@ Common types include:
 
 When you deploy a %INSTANCE%, you enter or click through the authentication for each connection in the config wizard.
 Each %INSTANCE% has its own connection values, so you can deploy a separate %INSTANCE% per third-party account if you need to.
-
-## Build-only connections
-
-While you're building and testing in the %EMBEDDED_DESIGNER%, you may not want to set up full OAuth 2.0 apps for every third party.
-Some connectors offer **Build-Only** connections that let you authenticate with a sandbox account so you can test your %INTEGRATION%.
-Build-only connections are intended for development and testing only - when you deploy a real %INSTANCE%, you'll need to authenticate with your own OAuth 2.0 app or your own credentials.
