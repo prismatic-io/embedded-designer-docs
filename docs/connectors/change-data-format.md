@@ -1,11 +1,11 @@
 ---
 title: Change Data Format Connector
 sidebar_label: Change Data Format
-description: Change data from one format to another
+description: Convert data between JSON, XML, YAML, CSV, and JavaScript objects, and serialize JSON Lines and URL-encoded form data.
 ---
 
 ![Change Data Format](./assets/change-data-format.png#connector-icon)
-The **change data format** component allows you to convert data between common formats, like JSON, XML, CSV, and YAML, and to serialize (turn an object into a string) or deserialize (turn a string into an object) each supported format.
+Convert data between JSON, XML, YAML, CSV, and JavaScript objects, and serialize JSON Lines and URL-encoded form data.
 
 ## Actions
 

@@ -1,12 +1,11 @@
 ---
 title: Pretty Good Privacy Connector
 sidebar_label: Pretty Good Privacy
-description: Create and translate encrypted messages
+description: Encrypt and decrypt messages and files with PGP (Pretty Good Privacy) keys.
 ---
 
 ![Pretty Good Privacy](./assets/pgp.png#connector-icon)
-[Pretty Good Privacy](https://project.microsoft.com/en-US/) is an encryption program that provides cryptographic privacy and authentication for data communication.
-This component allows you to encrypt and decrypt strings in an integration.
+Encrypt and decrypt messages and files with PGP (Pretty Good Privacy) keys.
 
 ## Actions
 
